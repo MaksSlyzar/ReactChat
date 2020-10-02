@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/FontAwesome/fontawesome.min.css" />
+    </head>
+    <body>
+         <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="js/react/babel.min.js"></script>
+        <script src="js/react/react.development.js" crossorigin></script>
+        <script src="js/react/react-dom.development.js" crossorigin></script>
+        
+        <!--Load bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="js/bootstrap/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="js/bootstrap/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="js/bootstrap/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        
+        
+
+        <div id="root">
+            
+        </div>
+
+        <script src="socket.io/socket.io.js"></script>
+        <script>
+            const socket = io();
+        </script>
+
+        <script type="text/babel" src="js/components/auth.js"></script>
+        <script type="text/babel" src="js/components/messages.js"></script>
+        <script type="text/babel" src="js/components/messageInput.js"></script>
+        <script type="text/babel" src="js/components/userPanel.js"></script>
+        <script type="text/babel" src="js/script.js"></script>
+    </body>
+</html>
